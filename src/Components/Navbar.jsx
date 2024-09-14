@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom'
 import {links} from "../Routes/routes"
 
 
+
+
+
 const Navbar = () => {
+
+  
   return (
+    <>
+    
    <div className='navcontainer'>
     <div className="logo">
         logo
@@ -17,10 +24,13 @@ const Navbar = () => {
         return <Link className='item' key={index} to={list.to}>{list.link}</Link>
       })
      }
-          
         </ul>
     </div>
+   
+ 
    </div>
+ 
+   </>
   )
 }
 

@@ -7,7 +7,6 @@ import Placements from '../Components/Placement'
 import Bottom from '../Components/Bottom'
 import Footer from '../Components/Footer'
 
-
 const HomePage = () => {
   return (
     <div>

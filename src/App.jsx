@@ -3,6 +3,7 @@ import './App.css'
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import {routes} from "./Routes/routes"
 import Navbar from './Components/Navbar'
+import SideNav from './Components/SideNav'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
   
      <Router>
  <Navbar/>
+ <SideNav/>
     
           <Routes>
             {routes &&

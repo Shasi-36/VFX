@@ -5,7 +5,7 @@ const Bottom = () => {
     <div className='bottom'>
         <div className="company">
             <h4>VFX Studio</h4>
-            <p>Sahasra Academy of Media and Entertainment Studies (SAMES) are specialist VFX training institute in Hyderabad. We offer you job oriented courses in media and entertainment industry. Our institute has more than 10 years of experienced mentors. The teaching and learning process is carried out through the use of High end computers, Wacom tablets and other equipments. SAMES provides you with the best infrastructure, which helps students to suitably work and execute projects of their own field. The other facilities provided by SAMES are green screen room for production and digital film shootings, which sharpens the student's creative and technical skills.</p>
+            <p>VFX Academy of Media and Entertainment Studies (SAMES) are specialist VFX training institute in Hyderabad. We offer you job oriented courses in media and entertainment industry. Our institute has more than 10 years of experienced mentors. The teaching and learning process is carried out through the use of High end computers, Wacom tablets and other equipments. SAMES provides you with the best infrastructure, which helps students to suitably work and execute projects of their own field. The other facilities provided by SAMES are green screen room for production and digital film shootings, which sharpens the student's creative and technical skills.</p>
         </div>
         <div className="course">
         <h4>Courses</h4>

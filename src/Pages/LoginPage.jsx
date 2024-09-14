@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md";
 import { TbPassword } from "react-icons/tb";
 import { Link } from 'react-router-dom';
+import { IoMdEye } from "react-icons/io";
+import { IoMdEyeOff } from "react-icons/io";
 
 const LoginPage = () => {
   
+  const [show,setShow]=useState(false)
     const [data,setdata] = useState({
       email: '',
       password:''
@@ -13,6 +16,10 @@ const LoginPage = () => {
     const changeHander= e =>{
       setdata({...data,[e.target.name]:e.target.value})
     }
+const clickHandler=(e)=>{
+  setShow(!show)
+}
+    
     const submitHandler = e => {
       e.preventdefault();
       if (username.length <= 5) {
@@ -40,7 +47,11 @@ const LoginPage = () => {
       </div>
       <div className="input">
       <TbPassword />
-      <input type="text" name="password" value={password} placeholder="enterpassword" onChange={changeHander}/>
+      <input type={show ? "text":"password"} name="password" value={password} placeholder="enterpassword" onChange={changeHander}/>
+      <span className="eyeicon" onClick={clickHandler}>
+     { show ? <IoMdEyeOff />:<IoMdEye />}
+      </span>
+      
       </div>
      
       <button type='button'>Signup</button>
@@ -48,9 +59,7 @@ const LoginPage = () => {
       <div className='lnspan'>
       <span>Not Yet Register?<Link to='/register' >Register</Link></span>
       </div>
-      
     </form>
-   
         </div>
       </div>
   )
