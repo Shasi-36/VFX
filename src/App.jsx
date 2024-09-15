@@ -12,7 +12,6 @@ function App() {
      <Router>
  <Navbar/>
  <SideNav/>
-    
           <Routes>
             {routes &&
               routes.map((item, index) => {
